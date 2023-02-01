@@ -1,42 +1,21 @@
-
-class Solution{
-    //Function to find the leaders in the array.
-    public:
-    vector<int> leaders(int a[], int n){
-         vector<int> ans;
-
-        stack <int> st;
-
-        int max = INT_MIN;
-
-        for(int i=n-1;i>=0;i--){
-
-            if(a[i]>=max){
-
-            st.push(a[i]);
-
-            max = a[i];
-
+   int equilibriumPoint(long long a[], int n) {
+    
+        int sr=0;
+        int sl=0;
+        if(n==1){
+            return 1;
+        }
+        for(int i=1;i<n;i++){
+            sr += a[i];
+        }
+        for(int i=0; i<n-1; i++){
+            if(sl==sr){
+                return i+1;
             }
-
+            sl+=a[i];
+            sr-=a[i+1];
         }
-
-        
-
-        while(!st.empty()){
-
-            ans.push_back(st.top());
-
-            st.pop();
-
-        }
-
- 
-
-        return ans;
-
-        
-
+        return -1;
     }
-        
+
 };
