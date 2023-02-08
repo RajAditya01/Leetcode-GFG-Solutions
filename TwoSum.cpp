@@ -19,6 +19,28 @@ public:
         
 };
 
+//method 2 onorder set
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int t) {
+        int n=nums.size();
+
+        unordered_map<int,int> m;
+
+        for(int i=0; i<n; i++){
+            int x=nums[i];
+            int y=t-x;
+            if(m.find9(y)!=m.end()){
+                return {i. m[y]};
+            }
+            m[num[i]]=i;
+        }
+        return{-1,-1};
+    }
+        
+};
+
 //In java using hasmap
 class Solution {
     public int[] twoSum(int[] nums, int target) {
