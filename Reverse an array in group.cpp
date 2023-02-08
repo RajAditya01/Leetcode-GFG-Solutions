@@ -1,31 +1,31 @@
-    //    int i=k,c=0,p=1;
+       int i=k,c=0,p=1;
 
-    //     vector<long long> v;
+        vector<long long> v;
 
-    //     while(i<n){
+        while(i<n){
 
-    //         for(int j=p*k-1;j>=k*c;j--){
+            for(int j=p*k-1;j>=k*c;j--){
 
-    //             v.push_back(arr[j]);
+                v.push_back(arr[j]);
 
-    //         }
+            }
 
-    //         i=i+k;
+            i=i+k;
 
-    //         c++;p++;
+            c++;p++;
 
-    //     }
+        }
 
-    //     for(int j=n-1;j>=k*c;j--){
+        for(int j=n-1;j>=k*c;j--){
 
-    //         v.push_back(arr[j]);
+            v.push_back(arr[j]);
 
-    //     }
+        }
 
-    //     for(int j=0;j<n;j++){
+        for(int j=0;j<n;j++){
 
-    //         arr[j]=v[j];
+            arr[j]=v[j];
 
-    //    }
+       }
 
-    // }
+    }
