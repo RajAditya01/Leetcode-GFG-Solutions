@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+using namespace std;
 int findEquilibriumIndex(vector<int> &arr) {
      
     int n = arr.size();
