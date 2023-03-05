@@ -76,11 +76,12 @@ int main() {
         } else if (capitalizeNext) {
             camelCaseString += toupper(originalString[i]);
             capitalizeNext = false;
-        } else if (isupper(originalString[i])) {
-            camelCaseString += " ";
-            camelCaseString += originalString[i];
         } else {
             camelCaseString += originalString[i];
+        }
+        
+        if (originalString[i] == '_' && i + 1 < originalString.length() && originalString[i+1] != '_') {
+            camelCaseString += ' ';
         }
     }
 
