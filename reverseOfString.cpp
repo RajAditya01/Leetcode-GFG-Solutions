@@ -1,6 +1,7 @@
 string reverseWord(string str)
 {
 
+// 1
     // int i = 0;
     // int j = str.length()-1;
 
@@ -11,7 +12,9 @@ string reverseWord(string str)
 
     // Your code here
 
-    stack<int> s;
+
+// 2
+/*    stack<int> s;
 
     for (int i = 0; i < str.size(); i++)
 
@@ -37,3 +40,25 @@ string reverseWord(string str)
 
     return sk;
 }
+*/
+
+// 3
+string reverseWord(string str){
+
+    string ans="";
+
+    int i=0;
+
+    int j= str.size()-1;
+
+    while(i<j){
+
+        swap(str[i], str[j]);
+
+        i++;
+
+        j--;
+
+    }
+
+    return str;
