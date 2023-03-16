@@ -32,11 +32,6 @@ class Solution
             }
             st.pop();
         }
-        return res;
-        
-        
-            
-           
-        
+        return res;        
     } 
 };
