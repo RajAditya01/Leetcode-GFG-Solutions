@@ -6,8 +6,7 @@ public:
         size=1e6+1;
         m.resize(size);
         
-    }
-    
+    }    
     void add(int key) {
         m[key]=1;
         
